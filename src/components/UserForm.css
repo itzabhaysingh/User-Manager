@@ -1,0 +1,45 @@
+/* UserForm.css */
+
+dialog {
+    z-index: 10;
+    margin: auto;
+    min-width: 30vw;
+    position: fixed;
+    max-height: 60vh;
+    overflow-y: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+label {
+    margin-right: 1rem;
+    font-weight: bold;
+}
+
+input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+
+    dialog {
+        width: 90vw;
+    }
+
+    input {
+        font-size: 14px;
+    }
+}
